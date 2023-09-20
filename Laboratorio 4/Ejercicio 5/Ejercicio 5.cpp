@@ -4,17 +4,18 @@ using namespace std;
 
 int main() 
 {
-    int num;
-     cout << "Ingrese un numero: ";
-     cin >> num;
+    int num{1};
+    bool cond{true}; 
 
-     for (int i{i}; i<=10; i++) {
-        if (num%i == 0) {
-            return num;
+    while(cond){
+        for(int i{1}; i <= 20; i++){
+            if(num%i!=0) break;
+            if(i==20){
+                cond = false;
+                cout << num;
+                break;
+            }
         }
-     }
-     cout << num;
-
-
-
+        num++;
+    }
 }

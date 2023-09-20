@@ -2,17 +2,17 @@
 
 using namespace std;
 
-int main() 
-{
-    int num;
-    cout << "Ingrese un numero: ";
-    cin >> num;
-    
-    for (int i{1}; i<=num; i++) {
-        if (i==1) return 0;
-        if (i==2) return 1;
-        return (i-1)+ (i-2);
-    }
-    cout << num << " "; 
+int main() {
+  int cont, a{0}, b{1}; 
+  long long int suma{0}; 
 
+  for(int i{1}; suma < 4000000; i++){
+    if(a%2==0){
+        suma += a; 
+    }
+    cont = a;
+    a = b;
+    b = a + cont;
+  }
+  cout << suma;
 }

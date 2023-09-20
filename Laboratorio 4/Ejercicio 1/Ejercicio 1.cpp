@@ -1,17 +1,12 @@
 #include <iostream>
-
 using namespace std;
 
 int main() 
 {
-    int num, sum = 0;
-    cout << "Ingrese un numero: ";
-    cin >> num;
+    int sum = 0;
 
-    for (int i{1}; i<num; i++) {
+    for (int i{1}; i < 1000; i++) {
         if (i%3 == 0 || i%5 == 0) sum += i;
     }
     cout << sum << " ";
-
-
 }
